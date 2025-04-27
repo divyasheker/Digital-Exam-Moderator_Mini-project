@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  color: white;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* Add scroll bar when content exceeds height */
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 70px;
+  background-image: linear-gradient(
+    to top,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero:hover {
+  transform: scale(1.02);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  max-width: 600px;
+  color: #000000;
+}
+
+/* Custom Button */
+.btn-custom {
+  background-color: #ff5733;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.btn-custom:hover {
+  background-color: #e64a19;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sections */
+.section {
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+  color: black;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Service Box */
+.service-box {
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.service-box h4 {
+  font-size: 1.6rem;
+  color: #0e4b8d;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .service-box {
+    padding: 25px;
+  }
+}
+
+/* Ensure the page takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the content push the footer down */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure the main content grows to push the footer */
+.main-content {
+  flex: 1;
+}
+
+/* Style the footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40; /* Dark background */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* Hero Section Specific */
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scroll thumb color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Hover state color */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track color */
+  border-radius: 5px;
+}
