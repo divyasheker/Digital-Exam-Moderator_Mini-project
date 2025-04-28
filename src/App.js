@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'animate.css';
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"; 
 import PageWrapper from "./components/PageWrapper";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
