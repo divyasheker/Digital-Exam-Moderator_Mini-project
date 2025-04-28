@@ -11,13 +11,12 @@ import About from "./pages/About";
 import StudentDashboard from "./pages/StudentDashboard";
 import ExamPage from "./pages/ExamPage";
 import AdminDashboard from "./pages/AdminDashboard";
-import ModeratorDashboard from "./pages/ModeratorDashboard";
 import ProfilePage from "./pages/ProfilePage";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ResultsPage from "./pages/ResultsPage";
-import ManageUsers from "./pages/ManageUsers";
+
 import ManageExams from "./pages/ManageExamsPage";
 import LiveMonitoring from "./pages/LiveMonitoring";
 import Issues from "./pages/Issues";
@@ -30,6 +29,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import MyIssues from "./pages/MyIssues";
 import AvailableExamsPage from './pages/AvailableExamsPage';
 import ExamTakingPage from './pages/ExamTakingPage';
+import ModeratorDashboard from './pages/ModeratorDashboard';
+import ManageUsersPage from './pages/ManageUsersPage';
 
 
 function App() {
@@ -75,7 +76,7 @@ function App() {
 />
           <Route path="/profile" element={<PageWrapper><ProfilePage /></PageWrapper>} />
           <Route path="/results" element={<PageWrapper><ResultsPage /></PageWrapper>} />
-          <Route path="/manage-users" element={<PageWrapper><ManageUsers /></PageWrapper>} />
+          
           <Route path="/manage-exams" element={<PageWrapper><ManageExams /></PageWrapper>} />
           <Route path="/live-monitoring" element={<PageWrapper><LiveMonitoring /></PageWrapper>} />
           <Route path="/issues" element={<PageWrapper><Issues /></PageWrapper>} />
@@ -87,6 +88,9 @@ function App() {
 
           <Route path="/admin/manage-questions" element={<PageWrapper><ManageQuestionsPage /></PageWrapper>} />
           <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} /> {/* Catch-all route */}
+
+          <Route path="/manage-users" element={<PageWrapper><ManageUsersPage /></PageWrapper>} />
+
         </Routes>
       </div> 
       <Footer />
